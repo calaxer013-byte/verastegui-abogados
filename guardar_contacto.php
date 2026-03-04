@@ -2,7 +2,6 @@
 include("conexion.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     $nombre = mysqli_real_escape_string($conn, $_POST["nombre"]);
     $correo = mysqli_real_escape_string($conn, $_POST["correo"]);
     $telefono = mysqli_real_escape_string($conn, $_POST["telefono"]);
